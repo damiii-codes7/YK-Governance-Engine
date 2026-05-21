@@ -97,7 +97,7 @@ st.markdown("""
         text-align: center;
     }
     </style>
-""", unsafe_style_html=True)
+""", unsafe_allow_html=True)
 
 # 3. Premium Brand Header Structure
 st.markdown('<div class="brand-title">PageCoder | Governance</div>', unsafe_style_html=True)
@@ -137,7 +137,7 @@ if st.button("Audit Deployment"):
                     • Discontinue production pipeline schedules immediately.<br>
                     • Strip out intrusive tracking or behavioral logging architectures.
                 </div>
-            """, unsafe_style_html=True)
+            """, unsafe_allow_html=True)
             
         elif any(keyword in text for keyword in high_risk_keywords):
             st.markdown("""
@@ -150,7 +150,7 @@ if st.button("Audit Deployment"):
                     • Integrate a human-in-the-loop dashboard for manual overrides.<br>
                     • File registration profiles within the official EU AI Database.
                 </div>
-            """, unsafe_style_html=True)
+            """, unsafe_allow_html=True)
             
         elif any(keyword in text for keyword in limited_risk_keywords):
             st.markdown("""
@@ -162,7 +162,7 @@ if st.button("Audit Deployment"):
                     • Explicitly inform users they are interacting with synthetic systems.<br>
                     • Apply verifiable metadata watermarking to generated content channels.
                 </div>
-            """, unsafe_style_html=True)
+            """, unsafe_allow_html=True)
             
         else:
             st.markdown("""
@@ -173,7 +173,7 @@ if st.button("Audit Deployment"):
                     <strong>Best Practice Recommendation:</strong><br>
                     • Adhere to data minimization principles and ethical data code baselines.
                 </div>
-            """, unsafe_style_html=True)
+            """, unsafe_allow_html=True)
 
 # Footer element echoing the theme aesthetic
-st.markdown('<div class="footer-note">YK Governance Engine Engine • Deployed securely via Streamlit Cloud</div>', unsafe_style_html=True)
+st.markdown('<div class="footer-note">YK Governance Engine • Deployed securely via Streamlit Cloud</div>', unsafe_allow_html=True)
